@@ -1,0 +1,10 @@
+.form {
+  border: 1px solid black;
+  background: repeating-linear-gradient(
+    -55deg,
+    #e57373,
+    #e57373 10px,
+    #d81c38 10px,
+    #d81c38 20px
+  );
+}

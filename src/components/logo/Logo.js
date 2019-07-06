@@ -5,14 +5,11 @@ import './Logo.css';
 
 const Logo = () => {
   return (
-    <div>
-      <Tilt
-        className="Tilt text-center"
-        options={{ max: 30 }}
-        style={{ height: 150, width: 150 }}
-      >
+    <div className="ml-3">
+      <Tilt className="Tilt text-center" options={{ max: 30 }}>
         <div className="Tilt-inner">
-          <FontAwesomeIcon icon={['far', 'grin']} size="6x" />
+          Face Recognition App
+          <FontAwesomeIcon icon={['far', 'grin']} size="9x" className="pt-3" />
         </div>
       </Tilt>
     </div>
