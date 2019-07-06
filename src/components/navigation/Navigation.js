@@ -3,8 +3,10 @@ import './Navigation.css';
 
 const Navigation = () => {
   return (
-    <nav className="style pl-2">
-      <p>Sign out</p>
+    <nav className="nav-style p-2">
+      <a className="" href="index.js">
+        Sign out
+      </a>
     </nav>
   );
 };

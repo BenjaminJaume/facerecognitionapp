@@ -1,4 +1,4 @@
-.style {
-  display: 'flex';
-  justify-content: 'flex-end';
+.nav-style {
+  display: flex;
+  justify-content: flex-end;
 }
