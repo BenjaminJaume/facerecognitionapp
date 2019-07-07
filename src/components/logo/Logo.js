@@ -5,7 +5,7 @@ import './Logo.css';
 
 const Logo = () => {
   return (
-    <div className="ml-5">
+    <div className="d-flex justify-content-center">
       <Tilt className="Tilt text-center" options={{ max: 30 }}>
         <div className="Tilt-inner">
           Face Recognition App

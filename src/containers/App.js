@@ -38,7 +38,7 @@ class App extends Component {
           );
         },
         function(err) {
-          // there was an error
+          // Error
         }
       );
   };

@@ -3,12 +3,12 @@ import './Rank.css';
 
 const Rank = () => {
   return (
-    <div className="text-center text-white">
-      <div className="">
-        <h4>{'Ben, your current rank is '}</h4>
-      </div>
-      <div className="">
-        <h3>{'#5'}</h3>
+    <div className="pt-3 text-center text-white">
+      <div className="rank">
+        <h2>
+          {'Ben, your current rank is '}
+          <span className="display-rank">{`#5`}</span>
+        </h2>
       </div>
     </div>
   );
