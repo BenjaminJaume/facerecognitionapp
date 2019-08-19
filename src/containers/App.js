@@ -11,6 +11,7 @@ import SignUp from '../components/signup/SignUp';
 import Clarifai from 'clarifai';
 import './App.css';
 
+const linkDatabase = 'http://localhost:3000';
 const app = new Clarifai.App({
   apiKey: 'a466bb16792d4c3796bf4e2486f3a217'
 });
@@ -25,6 +26,12 @@ class App extends Component {
       route: 'signin',
       isSignedIn: false
     };
+  }
+
+  componentDidMount() {
+    fetch(linkDatabase)
+    .then(response => response.json())
+    .then(console.log);
   }
 
   calculateFaceLocation = data => {
