@@ -7,7 +7,7 @@ const SignUp = ({ onRouteChange }) => {
       <div className="card-signin rounded">
         <div className="card-body">
           <h2 className="card-title text-center mb-3">Sign Up</h2>
-          <form className="form-signin">
+          <div className="form-signin">
             <div className="form-label-group py-2">
               <input
                 type="text"
@@ -45,7 +45,7 @@ const SignUp = ({ onRouteChange }) => {
             >
               Sign Up
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
