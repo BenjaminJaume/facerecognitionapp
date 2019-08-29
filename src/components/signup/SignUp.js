@@ -87,9 +87,9 @@ class SignUp extends React.Component {
               </div>
 
               <button
+                onClick={this.onSubmitSignUp}
                 className="btn btn-primary btn-block text-uppercase"
                 type="submit"
-                onClick={this.onSubmitSignUp}
               >
                 Sign Up
               </button>
