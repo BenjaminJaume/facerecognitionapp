@@ -8,13 +8,7 @@ import ImageLinkForm from '../components/imagelinkform/ImageLinkForm';
 import FaceRecognition from '../components/facerecognition/FaceRecognition';
 import SignIn from '../components/signin/SignIn';
 import SignUp from '../components/signup/SignUp';
-import Clarifai from 'clarifai';
 import './App.css';
-
-// const linkDatabase = 'http://localhost:3000/';
-const app = new Clarifai.App({
-  apiKey: 'a466bb16792d4c3796bf4e2486f3a217'
-});
 
 const initialState = {
   input: '',
@@ -76,8 +70,14 @@ class App extends Component {
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
 
-    app.models
-      .predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
+    fetch('http://localhost:3000/imageUrl', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        input: this.state.input
+      })
+    })
+      .then(response => response.json())
       .then(response => {
         if (response) {
           fetch('http://localhost:3000/image', {
