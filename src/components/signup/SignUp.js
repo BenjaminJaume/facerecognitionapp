@@ -24,10 +24,7 @@ class SignUp extends React.Component {
   };
 
   onSubmitSignUp = () => {
-    //const linkDatabase = 'http://localhost:3000/signup';
-
-    // fetch(linkDatabase, {
-    fetch('https://polar-fjord-09786.herokuapp.com/register', {
+    fetch('https://polar-fjord-09786.herokuapp.com/signup', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
