@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Particles from 'react-particles-js';
-import propsParticles from '../particlesjs-config.json';
+// import Particles from 'react-particles-js';
+// import propsParticles from '../particlesjs-config.json';
 import Navigation from '../components/navigation/Navigation';
 import Logo from '../components/logo/Logo';
 import Rank from '../components/rank/Rank';
