@@ -24,7 +24,7 @@ class SignUp extends React.Component {
   };
 
   onSubmitSignUp = () => {
-    fetch('https://polar-fjord-09786.herokuapp.com/signup', {
+    fetch('https://faceappapi-benjaume.herokuapp.com/signup', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
